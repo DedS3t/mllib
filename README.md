@@ -43,7 +43,7 @@ cd mllib
 
 * Now run to get your directory ready
 
-```
+```bash
 
 python setup.py bdist_wheel
 
@@ -51,7 +51,7 @@ python setup.py bdist_wheel
 
 * Now use pip to install
 
-```
+```bash
 
 pip install .
 
@@ -66,7 +66,7 @@ pip install .
 * Linear regression
 	- ```.fit``` train model
 	- ```.betas``` the coefficients 
-```
+```python
 from mllib.models.LinearRegression import LinearRegression
 reg = LinearRegression(cost="mse")
 reg.fit(X, y)
