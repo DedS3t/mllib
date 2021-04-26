@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from mllib.helpers import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 
-TYPE = "nd" # 1d (single dimension) or nd (multi variate)
+TYPE = "1d" # 1d (single dimension) or nd (multi variate)
 if TYPE == "1d":
     data = pd.read_csv('./data/singledimdata.csv')
     X = data.iloc[:,0]
